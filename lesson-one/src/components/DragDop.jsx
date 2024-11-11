@@ -88,12 +88,13 @@ const Column = ({ title, column, headingColor, cards, setCards }) => {
   };
 
   const clearHighlights = (els) => {
-    const indicators = els || getIndeicators();
+    const indicators = els || getIndicators();
+
     indicators.forEach((i) => {
       i.style.opacity = "0";
     });
   };
-
+ 
   const highlighIndicator = (e) => {
     const indicators = getIndicators();
     clearHighlights(indicators);
@@ -109,7 +110,9 @@ const Column = ({ title, column, headingColor, cards, setCards }) => {
       (closest, child) => {
         const box = child.getBoundingClientRect();
 
-        const offset = e.clientY - (box.top + DISTANCE_OFFSET);
+        const offset = e.clientY - (box.top + DISTANCE_OFFSET); //this is silly complicated
+        // console.log('Offset:', offset);
+        // console.log('Current closest offset:', closest.offset);
         if (offset < 0 && offset > closest.offset) {
           return { offset: offset, element: child };
         } else {
