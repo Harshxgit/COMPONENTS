@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const useAnimate = () => {
+export default function useAnimate() {
   return (
     <div>useAnimate</div>
   )

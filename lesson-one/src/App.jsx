@@ -3,7 +3,7 @@ import Animatecontrol from "./components/animatecontrol";
 import BasicMotion from "./components/basicMotion";
 import DragDop from "./components/DragDop";
 import HorizontalScroll from "./components/HorizontalScroll";
-
+import useAnimate from "./components/useAnimate";
 import Parallax from "./components/Parallax";
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       {/* <Animatecontrol/> */}
       {/* <Parallax/> */}
       {/* <HorizontalScroll /> */}
-      <DragDop/>
+      {/* <DragDop/> */}
+      <useAnimate/>
     </div>
   );
 }
