@@ -6,6 +6,7 @@ import DragDop from "./components/DragDop";
 import HorizontalScroll from "./components/HorizontalScroll";
 
 import Parallax from "./components/Parallax";
+import Zoop from "./components/Zoop";
 function App() {
   return (
     <div>
@@ -14,7 +15,8 @@ function App() {
       {/* <Parallax/> */}
       {/* <HorizontalScroll /> */}
       {/* <DragDop/> */}
-      <Animate/>
+      {/* <Animate/> */}
+      <Zoop/>
     </div>
   );
 }
