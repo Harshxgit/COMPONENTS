@@ -1,6 +1,7 @@
 import "./App.css";
 import Animate from "./components/Animate";
 import Animatecontrol from "./components/animatecontrol";
+import AppleScroll from "./components/AppleScroll";
 import BasicMotion from "./components/basicMotion";
 import DragDop from "./components/DragDop";
 import HorizontalScroll from "./components/HorizontalScroll";
@@ -16,7 +17,8 @@ function App() {
       {/* <HorizontalScroll /> */}
       {/* <DragDop/> */}
       {/* <Animate/> */}
-      <Zoop/>
+      {/* <Zoop/> */}
+      <AppleScroll/>
     </div>
   );
 }

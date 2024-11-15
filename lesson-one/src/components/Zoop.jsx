@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { delay, easeInOut, motion } from "framer-motion";
 export default function Zoop() {
   return (
     <div className="h-screen bg-green-800 grid gap-2 place-content-center">
@@ -17,6 +17,9 @@ function Zooplink({ children, href }) {
       initial="initial"
       whileHover="hovered"
       href={href}
+      style={{
+        lineheight: 0.05,
+      }}
       className="relative block overflow-hidden bg-white text-4xl whitespace-nowrap font-black md:text-9xl  uppercase"
     >
       <div>
@@ -33,6 +36,11 @@ function Zooplink({ children, href }) {
               }}
               key={l}
               className="inline-block"
+              transition={{
+                duration: 0.25,
+                delay: 0.025 * l,
+                ease: "easeInOut",
+              }}
             >
               {i}
             </motion.span>
@@ -54,6 +62,11 @@ function Zooplink({ children, href }) {
               }}
               key={l}
               className="inline-block "
+              transiton={{
+                duration: 0.25,
+                delay: 0.2 * l,
+                ease: "easeInOut",
+              }}
             >
               {i}
             </motion.span>
