@@ -5,6 +5,7 @@ import AppleScroll from "./components/AppleScroll";
 import BasicMotion from "./components/basicMotion";
 import DragDop from "./components/DragDop";
 import HorizontalScroll from "./components/HorizontalScroll";
+import { MenuHover } from "./components/MenuHover";
 
 import Parallax from "./components/Parallax";
 import Zoop from "./components/Zoop";
@@ -18,7 +19,8 @@ function App() {
       {/* <DragDop/> */}
       {/* <Animate/> */}
       {/* <Zoop/> */}
-      <AppleScroll/>
+      {/* <AppleScroll/> */}
+      <MenuHover/>
     </div>
   );
 }
